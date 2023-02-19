@@ -13,7 +13,7 @@ app.set('views', 'views');
 const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
-db.execute('SELECT * FROM products').then().catch();
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -26,7 +26,7 @@ app.use(errorController.get404);
 app.listen(3000);
 
 
-// CREATE TABLE `sys`.`products` (
+// CREATE TABLE `node-complete`.`products` (
 //     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 //     `title` VARCHAR(255) NOT NULL,
 //     `price` DOUBLE NOT NULL,
